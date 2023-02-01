@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chapter-18</title>
+</head>
+<body>
+    <input type="text" size="50">
+    <input type="checkbox">
+    <input type="radio">
+
+
+    <input type="radio" name="color" id="red" value="#F00">
+    <input type="radio" name="color" id="green" value="#0F0">
+    <input type="radio" name="color" id="blue" value="#00F">
+
+    <input checked>
+    <input checked="">
+    <input checked="checked">
+    <input checked="ChEcKeD">
+
+
+    <label>
+        <input type="radio" name="color" value="#F00">
+        Red
+       </label>
+    
+
+    <fieldset>
+        <legend>Theme color:</legend>
+        <p>
+        <input type="radio" name="color" id="red" value="#F00">
+        <label for="red">Red</label>
+        </p>
+        <p>
+        <input type="radio" name="color" id="green" value="#0F0">
+        <label for="green">Green</label>
+        </p>
+        <p>
+            <input type="radio" name="color" id="blue" value="#00F">
+            <label for="blue">Blue</label>
+            </p>
+     </fieldset>
+
+
+     Marks: <input type="number" size="6" name="marks" min="0" max="100" />
+    Subject Feedback: <input type="range" size="2" name="feedback" min="1" max="5" />
+
+    <input pattern="\d*" title="Numbers only, please.">
+
+    <form>
+        <input type="text" name="name" required>
+        <input type="email" name="email" required>
+        <input pattern="\d*" name="number" required>
+        <input type="submit" value="Publish"> <!-- form will be validated -->
+        <input type="submit" value="Save" formnovalidate> <!-- form will NOT be validated -->
+       </form>
+</body>
+</html>

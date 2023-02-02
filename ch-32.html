@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+    <style>
+        canvas{
+             border:1px solid blue;
+ }
+
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas">
+        Cannot display graphic
+    </canvas>
+    
+    <script>
+        var ctx = document.getElementById("myCanvas").getContext("2d");
+// now we can refer to the canvas's 2D layer context using `ctx`
+ctx.fillStyle = "yellow";
+ctx.fillRect(50, 60, ctx.canvas.width, ctx.canvas.height); // x, y, width, height
+ctx.fillStyle = "red";
+ctx.fillText("My red canvas with some black text", 65, 95); // text, x, y
+    </script>
+</body>
+</html>
